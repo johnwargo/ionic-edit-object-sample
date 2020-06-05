@@ -8,5 +8,14 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item>
+      <ion-label><strong>Field 1</strong></ion-label>
+      <ion-input type="text" [(ngModel)]="dataObject.field1"></ion-input>
+    </ion-item>    
+    <ion-item>
+      <ion-label><strong>Field 2</strong></ion-label>
+      <ion-input type="text" [(ngModel)]="dataObject.field2"></ion-input>
+    </ion-item>
+  </ion-list>
 </ion-content>

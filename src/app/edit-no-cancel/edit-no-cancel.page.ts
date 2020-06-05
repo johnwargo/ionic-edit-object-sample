@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import {DataObject} from '../classes/data-object';
 
 @Component({
   selector: 'app-edit-no-cancel',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditNoCancelPage implements OnInit {
 
-  constructor() { }
+  dataObject: DataObject;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) {
+    console.log('EditNoCancelPage: constructor()');
+   }
 
   ngOnInit() {
+    console.log('EditNoCancelPage: ngOnInit()');
+    this.route.queryParams.subscribe(params => {
+      const state = this.router.getCurrentNavigation().extras.state;
+      this.dataObject = state.dataObject;
+      console.table(this.dataObject);
+    });
   }
 
 }
