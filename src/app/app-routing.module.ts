@@ -10,6 +10,14 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  
+  {
+    path: 'edit-no-cancel',
+    loadChildren: () => import('./edit-no-cancel/edit-no-cancel.module').then( m => m.EditNoCancelPageModule)
+  },
+  {
+    path: 'edit-cancel',
+    loadChildren: () => import('./edit-cancel/edit-cancel.module').then( m => m.EditCancelPageModule)
   },
 ];
 
