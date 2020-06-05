@@ -1,11 +1,57 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
       Ionic Edit Object Sample
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openRepo()">
+        <ion-icon name="logo-github"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <ion-list>
+    <ion-item lines="none">
+      <ion-label class="ion-text-wrap">
+        The standard mechanism for Ionic apps is to use the automatic, reactive UI. Any changes made to an Object are
+        automatically reflected in the app UI. Tap <strong>Edit (No Cancel)</strong> below to see an example of this.
+      </ion-label>
+    </ion-item>
+    <ion-item button (click)="editNoCancel()" color="light">
+      <ion-label>
+        Edit (No Cancel)
+      </ion-label>
+      <ion-icon name="arrow-forward-circle-outline" size="large" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label class="ion-text-wrap">
+        What many apps need, however, is a way to display an edit dialog, but not accept any changes until the user taps
+        the <strong>Save</strong> or <strong>OK</strong> button. When they tap <strong>Cancel</strong>, the object reverts to its original state. Tap <strong>Edit (With
+          Cancel)</strong> below to see an example of this.
+      </ion-label>
+    </ion-item>
+    <ion-item button (click)="editWithCancel()" color="light">
+      <ion-label>
+        Edit (With Cancel)
+      </ion-label>
+      <ion-icon name="arrow-forward-circle-outline" size="large" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item-divider>
+      <ion-label>
+        Example Data Object
+      </ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <strong>Field 1:</strong> {{dataObject.field1}}
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">
+        <strong>Field 2:</strong> {{dataObject.field2}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
