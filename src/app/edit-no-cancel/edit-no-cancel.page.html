@@ -7,12 +7,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-list>
+    <ion-label class="ion-text-wrap">
+      Edit one of the fields below, then tap the arrow button to return to the <strong>Home Page</strong>. You should
+      see your changes reflected there automatically.
+    </ion-label>
     <ion-item>
       <ion-label><strong>Field 1</strong></ion-label>
       <ion-input type="text" [(ngModel)]="dataObject.field1"></ion-input>
-    </ion-item>    
+    </ion-item>
     <ion-item>
       <ion-label><strong>Field 2</strong></ion-label>
       <ion-input type="text" [(ngModel)]="dataObject.field2"></ion-input>
