@@ -24,7 +24,6 @@ export class EditNoCancelPage implements OnInit {
     this.route.queryParams.subscribe(params => {
       const state = this.router.getCurrentNavigation().extras.state;
       this.dataObject = state.dataObject;
-      // console.table(this.dataObject);
     });
   }
 
