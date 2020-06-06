@@ -283,4 +283,8 @@ save() {
 }
 ```
 
-What I need to do when the user saves their changes is get the properties from the `tempObject` back into `dataObject`. You'd think I could just clone the `tempObject` back into `dataObject` but that doesn't work; Ionic doesn't pick up the change in that case. When you manually update each property like I do in that code, Ionic/Angular pick up the changes and successfully passes them back to the **Home** page. 
+What I need to do when the user saves their changes is get the properties from the `tempObject` back into `dataObject`. You'd think I could just clone the `tempObject` back into `dataObject` but that doesn't work; Ionic doesn't pick up the change in that case. When you manually update each property like I do in that code, Ionic/Angular pick up the changes and successfully passes them back to the **Home** page.
+
+***
+
+If you find this code useful, and feel like thanking me for providing it, please consider making a purchase from [my Amazon Wish List](https://amzn.com/w/1WI6AAUKPT5P9). You can find information on many different topics on my [personal blog](http://www.johnwargo.com). Learn about all of my publications at [John Wargo Books](http://www.johnwargobooks.com).
