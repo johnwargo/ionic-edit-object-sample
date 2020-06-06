@@ -4,7 +4,9 @@ Many Ionic books and tutorials illustrate how to build dialogs that render data 
 
 That doesn't always work for me.
 
-In my Ionic applications (I have one in app stores called [Time Slicer](https://timeslicer.app) plus several others I've built) I always want to give users an opportunity to edit a data element, but change their minds. To accommodate this, you have to use a rarely (well, never that I've seen) documented approach that I demonstrate in this repository.  For a complete write-up describing the code, refer to [About Ionic Edit Object Sample](https://github.com/johnwargo/ionic-edit-object-sample/blob/master/about.md).
+In my Ionic applications (I have one in app stores called [Time Slicer](https://timeslicer.app) plus several others I've built) I always want to give users an opportunity to edit a data element, but change their minds. To accommodate this, you have to use a rarely (well, never that I've seen) documented approach that I demonstrate in this repository.  For a complete write-up describing the code, refer to [About Ionic Edit Object Sample](https://github.com/johnwargo/ionic-edit-object-sample/blob/master/about.md). I also published a video demonstration of the sample application on [YouTube](https://www.youtube.com/watch?v=nJPmmxR8_iY&t=5s).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nJPmmxR8_iY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The application in this repository displays a main screen like the one shown below:
 
