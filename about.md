@@ -110,7 +110,7 @@ ngOnInit() {
 
 When this code runs, the page's local `dataObject` object contains the data from the **Home** page's `dataObject` object. Under the covers, Ionic automatically creates the necessary observables and subscriptions to update the data on the app's home page when the properties of this local object change. There's one caveat I'll cover later in this article.
 
->  Note: I could have used a different object name here if I wanted to, calling the local version of `dataObject` `localObject` or `johnObject` if I wanted, it wouldn't change anything about the way this works.
+> Note: I could have used a different object name here if I wanted to, calling the local version of `dataObject` `localObject` or `johnObject` if I wanted, it wouldn't change anything about the way this works.
 
 In the project's `edit-no-cancel.html`, I created a simple form using the following:
 
@@ -143,7 +143,7 @@ In the project's `edit-no-cancel.html`, I created a simple form using the follow
 
 With this in place, the form populates the input fields with the `field1` and `fiedl2` properties from the local `dataObject` object. The `[(ngModel)]` tag creates an Angular Model. wiring the input field to the associated property in the data object. This sets it up so any changes made in the form are automatically passed to the local `dataObject` object, then Ionic automatically passes those changes to the `dataObject` on the **Home** page. Reactive development at its finest.
 
-<I should probably add an image here illustrating what I just said>
+-- I should probably add an image here illustrating what I just said --
 
 ## Edit Cancel Page
 
